@@ -127,12 +127,12 @@ class ThaiNubSarm extends JFrame{
                 // System.out.println(exceptChar.length);
                 try{
                     for(i = 0;i<encodeString.length();i++){
-                        if(i%3 == 0 ){
-                            decode1 += encodeString.charAt(i);p1+=1;}
-                        else if(i%3 == 1 && i!=0){
-                            decode2 += encodeString.charAt(i);p2+=1;}
-                        else{
-                            decode3 += encodeString.charAt(i);p3+=1;    }         
+                        if(i%3 == 0 )
+                            decode1 += encodeString.charAt(i);
+                        else if(i%3 == 1 && i!=0)
+                            decode2 += encodeString.charAt(i);
+                        else
+                            decode3 += encodeString.charAt(i);       
                     }
                     textDecoded.setText(decode3+""+decode1+""+decode2);
                 }
